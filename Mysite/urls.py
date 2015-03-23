@@ -1,10 +1,14 @@
 from django.conf.urls import patterns, include, url
-from django.contrib import admin
 import views
+from django.contrib import admin
+admin.autodiscover()
+
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'Mysite.views.home', name='home'),
+    # url(r'^$', 'anket.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
     #url(r'^', views.merhaba_django),
+    url(r'^', include('polls.urls')),
+    url(r'^anket/', include('polls.urls', namespace="polls")),
     url(r'^admin/', include(admin.site.urls)),
 )
