@@ -51,9 +51,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'anket.urls'
+ROOT_URLCONF = 'polls.urls'
 
-WSGI_APPLICATION = 'anket.wsgi.application'
+WSGI_APPLICATION = 'polls.wsgi.application'
 
 
 # Database
