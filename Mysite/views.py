@@ -8,4 +8,4 @@ TEMPLATE_DIRS = (
     join(BASE_DIR,  'templates'),
 )
 def merhaba_django(request):
-    return HttpResponse(TEMPLATE_DIRS)
+    return HttpResponse(u'deneme')
